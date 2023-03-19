@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+  </head>
+  <body>
+    <!--表单标记form，单行文本框标记input type="text"， 密码框标记input type="password"-->
+    <form name="info" action="index.php" method="post" target="_blank">
+      用户名：<input
+        type="text"
+        name="user"
+        size="10"
+        maxlength="20"
+        required="required"
+      />
+      密码：<input
+        type="password"
+        name="psw"
+        size="10"
+        maxlength="20"
+        required="required"
+      />
+      <br />
+      <!--单选框标记input type="radio", value是表单提交的值， checked是初始选定状态-->
+      性别：
+      <input type="radio" name="sex" value="man" checked />男
+      <input type="radio" name="sex" value="wuman" />女
+      <br />
+      爱好：
+      <!--复选框标记input type="checkbox"， required复选选择不能为空-->
+      <input type="checkbox" name="like" value="1" checked />音乐
+      <input type="checkbox" name="like" value="2" />体育
+      <input type="checkbox" name="like" value="3" />文学
+      <!--下拉列表框标记select和option，multiple可进行多选， disabled禁用下拉列表框 -->
+      <br />
+      学历
+      <select name="recordOfFormalSchooling">
+        <option value="a">博士</option>
+        <option value="b">硕士</option>
+        <option value="c">本科</option>
+        <option value="d">专科</option>
+      </select>
+      <br />
+      <!--多行文本域标记textarea disabled禁用多行文本域-->
+      <textarea name="leaveAMessage" cols="10px" rows="5px">
+请给我们留言</textarea
+      >
+      <br />
+      <!--提交按钮标记input type="submit"-->
+      <input type="submit" value="注册" />
+      <!--重置按钮标记input type="reset"-->
+      <input type="reset" value="清空" />
+      <!--标准按钮标记input type="button"-->
+      <input
+        type="button"
+        value="标准按钮"
+        onclick="alert('这里是标准按钮');"
+      />
+      <br />
+      <!--图像按钮标记input type="image"-->
+      <input type="image" src="images/csk.png" alt="图片失效" height="300px""
+      onclick="alert('这是图像按钮');" />
+      <br />
+      <!--按钮标记button-->
+      <button type="button" onclick="alert('这是一个标准类型按钮');">
+        button类型
+      </button>
+      <button type="submit" onclick="alert('这是一个提交类型按钮');">
+        submit类型
+      </button>
+      <button type="reset" onclick="alert('这是一个重置类型按钮');">
+        reset类型
+      </button>
+      <br />
+      <!--文件域输入框标记input type="file"-->
+      <input type="file" name="f" size="50" /><br />
+      <!--隐藏域标记input type="hidden"-->
+      <input type="hidden" name="yc" value="game" />
+      <input type="submit" value="提交" /><br />
+      邮箱输入框：
+      <input type="email" name="em" placeholder="这里输入你的邮箱" /><br />
+      网址输入框：
+      <input type="url" name="u" /><br />
+      数字输入框：
+      <input type="number" name="n" /><br />
+      等级分：
+      <input type="range" name="deng" min="1" max="5" /><br />
+      选择你喜欢的颜色：
+      <input type="color" name="ys" />
+      <input type="submit" value="提交" /><br />
+      <input type="date" name="date" /><br />
+      <input type="month" name="month" /><br />
+      <input type="week" name="week" /><br />
+      <input type="time" name="time" /><br />
+      <input type="datetime-local" name="datetime-local" /><br />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 0.5px solid black;
+      }
+
+      #spacing_table {
+        border-spacing: 0px;
+        margin: auto;
+      }
+
+      .mydiv {
+        text-align: center;
+      }
+
+      fieldset {
+        margin: auto;
+        width: 380px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p align="center">用户注册表</p>
+    <form action="userinfo.txt" method="post" target="_blank">
+      <fieldset name="usertable1">
+        <legend>必填区域</legend>
+        <table id="spacing_table">
+          <tr>
+            <td>用户名</td>
+            <td>
+              <input
+                type="text"
+                name="username"
+                maxlength="20"
+                required="required"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>密码</td>
+            <td>
+              <input
+                type="text"
+                name="userpassword"
+                maxlength="20"
+                required="required"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>性别</td>
+            <td>
+              <input type="radio" name="sex" value="man" checked />男
+              <input type="radio" name="sex" value="wuman" />女
+            </td>
+          </tr>
+          <tr>
+            <td>籍贯</td>
+            <td>
+              <select name="from">
+                <option value="wuhan">武汉</option>
+                <option value="zhejiang">浙江</option>
+                <option value="shanghai">上海</option>
+                <option value="more">更多</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>电话</td>
+            <td>
+              <input
+                type="number"
+                name="telephone"
+                maxlength="11"
+                required="required"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>生日</td>
+            <td>
+              <input type="date" name="birthday" required="required" />
+            </td>
+          </tr>
+          <tr>
+            <td>年级</td>
+            <td>
+              大学<input
+                type="text"
+                name="grade"
+                size="1"
+                maxlength="2"
+                required="required"
+              />年级
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br />
+      <fieldset name="usertable2">
+        <legend>选填区域</legend>
+        <table id="spacing_table">
+          <tr>
+            <td>爱好：</td>
+            <td>
+              <input type="checkbox" name="course" value="read" />阅读
+              <input
+                type="checkbox"
+                name="course"
+                value="physicaleducation"
+              />体育 <input type="checkbox" name="course" value="music" />音乐
+              <input type="checkbox" name="course" value="comic" />动漫
+            </td>
+          </tr>
+          <tr>
+            <td>喜欢的颜色：</td>
+            <td>
+              <input type="color" name="favoriteColors" />
+            </td>
+          </tr>
+          <tr>
+            <td>上传照片：</td>
+            <td>
+              <input type="file" name="picture" size="50" />
+              <input type="hidden" name="f" />
+            </td>
+          </tr>
+          <tr>
+            <td>你的留言：</td>
+            <td>
+              <textarea name="leaveAMessage" cols="30" rows="8">
+在这里留言</textarea
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>邮箱地址：</td>
+            <td>
+              <input type="email" name="email" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <div class="mydiv">
+        <input type="submit" value="提交" /><input type="reset" value="重置" />
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 0.5px solid black;
+      }
+      td,
+      th {
+        padding: 6px 6px;
+      }
+      #spacing_table {
+        border-collapse: separate;
+        border-spacing: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="spacing_table">
+        <caption>学生信息表</caption>
+      <tr>
+        <!--th是表头单元格标记，会居中粗体显示-->
+        <th>学号</th>
+        <th>姓名</th>
+        <th>籍贯</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>张三</td>
+        <td>杭州</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>李四</td>
+        <td>绍兴</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>王五</td>
+        <td>温州</td>
+      </tr>
+    </table>
+    <hr />
+    
+    <table id="spacing_table">
+        <caption>报名信息表</caption>
+      <tr>
+        <td>姓名</td>
+        <td>蔡徐坤</td>
+        <td>照片</td>
+        <td rowspan="2">
+          <img src="images/csk.png" alt="图片失效" height="160px" />
+        </td>
+      </tr>
+      <tr>
+        <td>家庭住址</td>
+        <td colspan="2">地球蔡徐村</td>
+      </tr>
+      <tr>
+        <td>求学经历</td>
+        <td colspan="3">练习时长两年半练习生</td>
+      </tr>
+      <tr>
+        <td colspan="4">&nbsp;</td>
+      </tr>
+    </table>
+    <table id="spacing_table">
+        <caption>学生成绩单</caption>
+    <!--表格分组colgroup和col-->
+    <colgroup>
+        <col style="background-color: yellow;"></col>
+        <col span="2" style="width: 60px;"></col>
+    </colgroup>
+    <tr>
+        <th>姓名</th>
+        <th>语文</th>
+        <th>数学</th>
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td>60</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>李四</td>
+        <td>80</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td>总分</td>
+        <td colspan="2">300</td>
+    </tr>
+    </table>
+    <!--表格行分组标记thead, tbody, tfoot-->
+    <table id="spacing_table">
+        <caption>学生成绩单</caption>
+        <colgroup>
+            <col style="background-color: yellow;"></col>
+            <col span="2"></col>
+        </colgroup>
+        <thead style="background-color: #ccc;">
+            <tr>
+                <th>姓名</th>
+                <th>语文</th>
+                <th>数学</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>60</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>80</td>
+                <td>90</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总分</td>
+                <td colspan="2">300</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!--表格嵌套实例搁置-->
+    <!--元素分组标记fieldset, lefend-->
+    <h3>学生信息登记</h3>
+    <form action="index.php">
+        <fieldset>
+            <legend>基本信息</legend>
+            学号：<input type="text" name="id">
+            姓名：<input type="text" name="name">
+        </fieldset>
+        <fieldset>
+            <legend>家庭信息</legend>
+            <p>注意事项：填写时间为9月1日到9月3日</p>
+            家庭住址：<input type="text" name="address" >
+            家庭电话：<input type="text" name="call" >
+        </fieldset>
+    </form>
+    <fieldset>
+        <legend>第一种情况</legend>
+        <!--分区标记div,块容器，独占一行，前后会换行，可放多种网页元素，成为文档中独立的一块区域 -->
+        <div>这里是一个块容器</div>
+        <div><img src="images/csk.png" alt="图片失效" height="100px"></div>
+    </fieldset>
+    <fieldset>
+        <legend>第二种情况</legend>
+        <!--组合标记span，组合行内元素，是一个行内容器，默认只占行间的一部分，前后不会换行，可放多种网页元素-->
+        <span>这里是一个行容器</span>
+        <span><img src="images/csk.png" alt="图片失效" height="100px"></span>  
+    </fieldset>
+    <center>
+        <p>这里是使用center居中的一个段落</p>
+    </center>
+ </body>
+</html>
