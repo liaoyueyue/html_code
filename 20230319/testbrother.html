@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>brother</title>
+    <style>
+      div ~ span {
+        font-style: italic;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--兄弟选择 ~ 匹配前一个选择符后的所有同级的后一个选择符-->
+    <div>
+      <p>第一个段落文字<span>第一个span里的文字</span></p>
+      <span>第二个span里的文字</span>
+    </div>
+    <p>第二个span里的文字<span>第三个span里的文字</span></p>
+    <span>第四个span里的文字</span>
+    <span>第五个span里的文字</span>
+  </body>
+</html>
