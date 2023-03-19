@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 0.5px solid black;
+      }
+
+      #spacing_table {
+        border-spacing: 0px;
+      }
+
+      /* 选择父元素的所有编号未偶数的子元素E */
+      tr:nth-child(even) {
+        font-size: 5px;
+      }
+
+      /* 选择父元素的第一个子元素E */
+      tr:first-child {
+        font-size: 20;
+      }
+
+      /* 选择父元素的最后一个子元素E */
+      tr:last-child {
+        font-style: italic;
+      }
+
+      /* 选择不包含任何子节点的元素E进行匹配 */
+      td:empty {
+        background-color: black;
+      }
+
+      /* 父元素中只含有一个子元素E,匹配上该子元素E */
+      li:only-child {
+        border: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="spacing_table">
+      <caption>
+        成绩单
+      </caption>
+      <tr>
+        <td>姓名</td>
+        <td>总分</td>
+      </tr>
+      <tr>
+        <td>张三</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>李四</td>
+        <td>530</td>
+      </tr>
+      <tr>
+        <td>王五</td>
+        <td>560</td>
+      </tr>
+      <tr>
+        <td>平均分</td>
+        <td></td>
+      </tr>
+    </table>
+    <ul>
+      <li>年级排行版</li>
+      <li>专业级排行榜</li>
+    </ul>
+    <ul>
+      <li>年级成绩单</li>
+    </ul>
+  </body>
+</html>

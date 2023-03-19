@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 选择超链接未访问的元素 */
+      a:link {
+        font-size: 5px;
+      }
+
+      /* 选择有鼠标悬停在其上的元素E */
+      a:hover {
+        font-size: 25px;
+      }
+
+      /* 选择被激活的元素E */
+      a:active {
+        font-size: 15px;
+      }
+
+      /* 选择超链接已被访问后的元素E */
+      a:visited {
+        font-size: 15;
+      }
+
+      /* 选择获得焦点时的元素E */
+      input:focus {
+        font-size: 10px;
+      }
+
+      input:hover {
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="http://www.baidu.com">百度</a>
+    <a href="#yh">链接到用户名处</a>
+    <a href="#mm">链接到密码处</a><br />
+    <a id="yh">用户名</a>：<input type="text" name="username" /><br />
+    <a id="mm">密码</a>：<input type="password" /><br />
+  </body>
+</html>

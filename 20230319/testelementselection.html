@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>elementSelection</title>
+    <style>
+      /* 选择E元素内的第一个字符 */
+      p::first-letter {
+        font-size: 30px;
+      }
+
+      /* 选择E元素内的第一行 */
+      p::first-line {
+        font-style: italic;
+      }
+
+      /* 选择E元素内容后的位置，用content样式新增内容 */
+      li::after {
+        content: "(参考教材资料)";
+        color: red;
+      }
+
+      /* 选择被选中的E元素 */
+      p::selection {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p>课程菜单</p>
+    <p>
+      静态网页上采用的规则有HTML（超文本标记语言，Hyper Text Markup
+      Language）、CSS(层叠样式表 Cascading Style Sheet)、JavaScript
+      脚本语言、jQuery 脚本语言、ActiveX
+      控件、Java小程序等，这些规则有Web浏览器运行
+    </p>
+    <p>
+      静态网页设计是网站设计的基础。HTML、CSS、JavaScript是金泰网页设计的三大技术。目前主流的版本是HTMl
+      5、CSS 3和JavaScript、jQuery
+    </p>
+    <ul>
+      <li>HTML 5</li>
+      <li>CSS 3</li>
+      <li>JavaScript</li>
+      <li>jQuery</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>attributeSelection</title>
+    <style>
+      p[title] {
+        font-size: 5px;
+      }
+
+      p[title="d"] {
+        font-style: italic;
+      }
+
+      /*
+      *具有属性title,且属性值是空格分隔的字词列表，字词列表中含有b的元素
+      */
+      p[title~="b"] {
+        background-color: yellow;
+      }
+
+      /*       
+      *具有属性title,且属性值是-分隔的字词列表，字词列表是以a开始的元素
+      */
+      p[tiile|="a"] {
+        font-size: 20px;
+      }
+
+      /* 属性title是以c为前缀的元素 */
+      p[title^="c"] {
+        font-style: italic;
+        font-size: 20px;
+      }
+
+      /* 属性title是以a为后缀的元素 */
+      p[title$="a"] {
+        font-style: italic;
+        font-size: 5px;
+      }
+
+      /* 属性title包含b子字符串的元素 */
+      p[title*="b"] {
+        border: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <!--属性选择符-->
+    <p>这里是普通的段落文字</p>
+    <p title="d">d的内容，斜体</p>
+    <p title="a b">a b内容，黄背景，含有b,加边框</p>
+    <p title="a-b">a-b，连字a开头，字号20像素，含有b加边框</p>
+    <p title="cb">cb, c前缀，斜体，字号20像素，含有b加边框</pti>
+    <p title="da">da，a结尾，斜体，字号5像素</p>
+    <p title="dbk">dbk内容，含有b加边框</p>
+    <p></p>
+  </body>
+</html>
