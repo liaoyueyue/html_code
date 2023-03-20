@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>盒子大小样式示例</title>
+    <style>
+      #b {
+        width: 200px;
+        height: 200px;
+        box-sizing: content-box;
+      }
+
+      #c {
+        width: 200px;
+        height: 200px;
+        border: 5px solid red;
+        padding: 50px;
+        /* box-sizing确认盒子大小计算方式 */
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="images/picture (1).jpg"
+      alt="这里是一张风景照"
+      width="200px"
+      height="200px"
+      id="a"
+    />
+    <img src="images/picture (1).jpg" alt="这里是一张风景照" id="b" />
+    <img src="images/picture (1).jpg" alt="这里是一张风景照" id="c" />
+  </body>
+</html>

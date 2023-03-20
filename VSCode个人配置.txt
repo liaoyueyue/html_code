@@ -8,8 +8,10 @@ HTML:
 显示实时网页：live server
 代码格式化：prettier
 /*
-*Explain:格式化代码需要到设置里搜索Default Formatter并设置为Prettier-Code formatter
-*勾选Format On Save
+* prettier
+* Explain:格式化代码需要到设置里
+* 1、搜索Default Formatter并设置为Prettier-Code formatter
+* 2、搜索Format On Save并勾选Format On Save选项
 */
 -----------------------------------------------------------------------------------
 CSS:
@@ -18,7 +20,7 @@ CSS:
 javaScript:
 快速在.js文件中插入代码：JavaScript (ES6) code snippets 
 /*
-*需要自行查看快捷输入的代码
+* 需要自行查看快捷输入的代码
 */
 -----------------------------------------------------------------------------------
 Vue:
