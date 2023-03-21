@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>border-image</title>
+    <style>
+      div {
+        border-style: solid;
+        border-width: 20px;
+      }
+
+      #a {
+        border-image: url(images/bk.jpg) 100;
+      }
+
+      #b {
+        border-image: url(images/bk.jpg) 100 repeat;
+      }
+
+      #c {
+        border-image: url(images/bk.jpg) 100 round;
+      }
+
+      #d {
+        border-image: url(images/bk.jpg) 100 200 50 160 stretch;
+      }
+
+      #e {
+        border-image: url(images/bk.jpg) 100 fill;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- border-image用于分割图像作为边框的效果。图像边框样式border-image包括5个可选子样式，其基本语法格式如下。 -->
+    <img src="images/bk.jpg" alt="这是一个风景照" height="200px" />
+    <div id="a">这是一个div容器 a</div>
+    <br />
+    <div id="b">这是一个div容器 b</div>
+    <br />
+    <div id="c">这是一个div容器 c</div>
+    <br />
+    <div id="d">这是一个div容器 d</div>
+    <br />
+    <div id="e">这是一个div容器 e</div>
+    <br />
+  </body>
+</html>
