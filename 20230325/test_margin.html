@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>盒子外边距样式</title>
+    <style>
+      div,
+      span {
+        width: 100px;
+        border-style: solid;
+      }
+
+      #a {
+        margin: 10px 20px;
+      }
+
+      #b {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      #c {
+        margin-top: -30px;
+      }
+
+      #d {
+        margin: 10px 20px;
+      }
+
+      #e {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="a">这是第一个div容器</div>
+    <div id="b">这是第二个div容器</div>
+    <div id="c">这是第三个div容器</div>
+    <span id="d">行内第一个盒子</span>
+    <span id="e">行内第二个盒子</span>
+  </body>
+</html>

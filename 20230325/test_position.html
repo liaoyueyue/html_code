@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>盒子位置定位样式</title>
+    <style>
+      /* {position:定位样式值;}
+        static 默认定位
+        absolute 绝对定位
+        relative 相对定位
+        fixed 固定定位 */
+
+      div {
+        width: 250px;
+        height: 250px;
+        border: medium #00c double;
+        position: absolute;
+        left: 100px;
+        top: 10px;
+      }
+
+      #st1 {
+        position: relative;
+        left: 20px;
+        top: 50px;
+      }
+
+      #st2 {
+        position: relative;
+        left: 10px;
+        top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        id="st1"
+        src="images/picture (1).jpg"
+        alt="图片1"
+        width="140px"
+        height="120"
+      /><br />
+      <img
+        id="st2"
+        src="images/picture (2).jpg"
+        alt="图片2"
+        width="140px"
+        height="120"
+      />
+    </div>
+  </body>
+</html>
