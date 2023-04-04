@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>盒子层叠顺序样式</title>
+    <style>
+      #t1 {
+        /*
+        * relative 相对定位
+        */
+        position: relative;
+        left: 150px;
+        top: 50px;
+        z-index: 1;
+      }
+
+      #t2 {
+        position: relative;
+        left: 200px;
+        top: -150px;
+        z-index: 3;
+      }
+
+      #t3 {
+        /*
+        * absolute 绝对定位，若附近的祖先是浏览器，则相对于浏览器边缘偏移
+        */
+        position: absolute;
+        left: 100px;
+        top: 20px;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <!--z-index, 用于设置盒子的层叠顺序，只有当position样式设置为非static时有效-->
+    <div>
+      <img id="t1" src="images/picture (1).jpg" width="140" height="120" />
+    </div>
+    <div>
+      <img id="t2" src="images/picture (2).jpg" width="140" height="120" />
+    </div>
+    <div>
+      <img id="t3" src="images/picture (3).jpg" width="140" height="120" />
+    </div>
+  </body>
+</html>
