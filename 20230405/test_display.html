@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>盒子显示样式</title>
+    <style>
+      /* display用于设置盒子是否显示以及如何显示
+        * none隐藏
+        * inline内联  （不独占一行，不能设置宽度高度）
+        * block块元素 （独占一行，可设宽度高度）
+        * inline-block    (内联块元素，不独占一行，可设宽度高度)
+        * list-item   (列表项目，独占一行，可设宽度高度)  
+        */
+      a {
+        display: block;
+        width: 130px;
+        height: 30px;
+        background-color: yellow;
+        margin: 10px 20px;
+        border: 5px solid #0f0;
+      }
+
+      p {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p>网站导航栏</p>
+    <a href="">首页</a><a href="">产品</a><a href="">下载</a>
+  </body>
+</html>
