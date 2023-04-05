@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>135面，图10.13</title>
+    <style>
+      /* 
+      dashed 虚线
+      dotted 点线 */
+      /* box-shadow 类型 水平偏移 垂直偏移 阴影范围 阴影外延 颜色  */
+      /* absolute 绝对的 */
+      /* relative 相对的 */
+      #container {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        border: 2px solid black;
+        box-shadow: inset 2px 2px 20px 8px blue;
+        width: 800px;
+        padding: 18px 15px;
+      }
+
+      #banner {
+        padding: 10px 5px;
+        border: 2px solid red;
+      }
+
+      #content {
+        float: left;
+        margin: 5px;
+        border: 2px dotted black;
+        width: 570px;
+        height: 300px;
+      }
+
+      #links {
+        float: right;
+        margin: 5px;
+        border: 2px solid black;
+        border-radius: 0px 40px 0px 40px/0px 40px 0px 40px;
+        width: 200px;
+        height: 300px;
+      }
+
+      #footer {
+        clear: right;
+        margin: 10px 5px;
+        padding: 5px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- container 容器 -->
+    <!-- banner 横幅 -->
+    <!-- content 内容 -->
+    <div id="container">
+      页面container
+      <div id="banner">导航banner</div>
+      <div id="content">主内容content</div>
+      <div id="links">相关链接links</div>
+      <div id="footer">页脚footer</div>
+    </div>
+  </body>
+</html>
