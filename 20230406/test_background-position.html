@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>背景图片位置样式</title>
+    <style>
+      div {
+        margin: 5px;
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+        background-image: url(images/picture1.jpg);
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        float: left;
+      }
+
+      #a {
+        background-position: center;
+      }
+
+      #b {
+        background-position: top;
+      }
+
+      #c {
+        background-position: left;
+      }
+
+      #d {
+        background-position: right;
+      }
+
+      #e {
+        background-position: bottom;
+      }
+
+      #f {
+        background-position: 80 30;
+      }
+
+      #g {
+        background-position: top right;
+      }
+    </style>
+  </head>
+  <body>
+    <div>背景图片默认位置</div>
+    <div id="a">背景图片居中</div>
+    <div id="b">背景图片顶部居中</div>
+    <div id="c">背景图片左部居中</div>
+    <div id="d">背景图片右部居中</div>
+    <div id="e">背景图片底部居中</div>
+    <div id="f">背景图片坐标定位</div>
+    <div id="g">背景图片右上定位</div>
+  </body>
+</html>
