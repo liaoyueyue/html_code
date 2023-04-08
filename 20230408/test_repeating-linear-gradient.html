@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>重复线性渐变函数</title>
+    <style>
+      p {
+        width: 150px;
+        height: 80px;
+        float: left;
+      }
+
+      #a {
+        background: repeating-linear-gradient(
+          to top,
+          #000 5%,
+          #fff 5%,
+          #ccc 10%
+        );
+      }
+
+      #b {
+        background: repeating-linear-gradient(
+          50deg,
+          #000 5%,
+          #fff 5%,
+          #cc6 15%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <p id="a">这是第一个段落</p>
+    <p id="b">这是第二个段落</p>
+  </body>
+</html>

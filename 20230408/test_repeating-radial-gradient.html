@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>重复径向渐变函数</title>
+    <style>
+      p {
+        width: 200px;
+        height: 200px;
+        float: left;
+      }
+
+      #a {
+        border-radius: 100%;
+        background: repeating-radial-gradient(
+          circle 8em at bottom,
+          #000,
+          #fff,
+          #ccc
+        );
+      }
+
+      #b {
+        background: repeating-radial-gradient(
+          ellipse farthest-corner at 10% 50%,
+          #000 15%,
+          #fff,
+          #cc6,
+          #f00
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <p id="a">这是第一个段落</p>
+    <p id="b">这是第二个段落</p>
+  </body>
+</html>

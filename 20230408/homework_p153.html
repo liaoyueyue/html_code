@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>p153_11.15</title>
+    <style>
+      #box {
+        border: 1px dotted red;
+        text-align: center;
+        background: url(images/picture1.jpg) repeat;
+        background-size: contain;
+      }
+
+      #login-wrapper {
+        border: 1px dotted blue;
+        margin: auto;
+        width: 250px;
+      }
+
+      #textfield:focus {
+        background-color: red;
+      }
+
+      #focus_tr:hover {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div>用户登录</div>
+      <div id="login-wrapper">
+        <form action="" method="get">
+          <table id="login_table">
+            <tr id="focus_tr">
+              <td>用户名</td>
+              <td>
+                <input
+                  type="text"
+                  name="username"
+                  required="required"
+                  id="textfield"
+                />
+              </td>
+            </tr>
+            <tr id="focus_tr">
+              <td>密码&emsp;</td>
+              <td>
+                <input
+                  type="password"
+                  name="password"
+                  required="required"
+                  id="textfield"
+                />
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="登录" />
+          <input type="reset" value="清空" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

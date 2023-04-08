@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>背景图片定位原点样式</title>
+    <style>
+      /* 定位原点默认从padding区域开始
+        padding-box 从padding开始显示背景图像
+        border-box 从border区域开始显示背景图像
+        content-box 从content区域开始显示背景图像 */
+      div {
+        margin: 5px;
+        width: 80px;
+        height: 80px;
+        border: 10px dotted red;
+        background-image: url(images/picture1.jpg);
+        background-repeat: no-repeat;
+        float: left;
+        padding: 20px;
+      }
+
+      #a {
+        background-origin: padding-box;
+      }
+
+      #b {
+        background-origin: border-box;
+      }
+
+      #c {
+        background-origin: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div>背景图片默认原点</div>
+    <div id="a">背景图片padding区域开始</div>
+    <div id="b">背景图片从border区域开始</div>
+    <div id="c">背景图片从content区域开始</div>
+  </body>
+</html>
