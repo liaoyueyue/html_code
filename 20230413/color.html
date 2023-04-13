@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文本颜色样式</title>
+    <style>
+      #a {
+        color: red;
+      }
+
+      #b {
+        color: #f00;
+      }
+
+      #c {
+        color: rgb(255, 0, 0);
+      }
+
+      /* hsl值的范围为：h（色相）0-360度，s（饱和度）0-100%，l（亮度）0-100%。 */
+      #d {
+        color: hsl(10, 90%, 50%);
+      }
+
+      /* red、green、blue的值范围是0-255，表示红、绿、蓝三个颜色通道的值；alpha的值范围是0-1，表示透明度，0表示完全透明，1表示完全不透明。 */
+      #e {
+        color: rgba(255, 0, 0, 1);
+      }
+
+      /* 在CSS中，hsla() 是一种颜色值表示方法，其中“h”代表色调（hue），“s”代表饱和度（saturation），“l”代表亮度（lightness），“a”代表 alpha 通道（透明度） */
+      #f {
+        color: hsla(10, 90%, 50%, 1);
+      }
+
+      /* transparent 透明的 */
+      #g {
+        color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="a">这是第一个段落，颜色 red</p>
+    <p id="b">这是第二个段落，颜色 f00</p>
+    <p id="c">这是第三个段落，颜色 rgb(255, 0, 0)</p>
+    <p id="d">这是第四个段落，颜色 hsl(10, 90%, 50%)</p>
+    <p id="e">这是第五个段落，颜色 rgba(255, 0, 0, 1)</p>
+    <p id="f">这是第六个段落，颜色 hsla(10, 90%, 50%, 1)</p>
+    <p id="g">这是第七个段落，颜色 transparent</p>
+  </body>
+</html>
