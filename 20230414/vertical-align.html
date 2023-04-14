@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文本垂直样式</title>
+    <style>
+      /* vertical 垂直的 */
+      #p1 {
+        vertical-align: baseline;
+      }
+
+      #p2 {
+        vertical-align: sub;
+      }
+
+      #p3 {
+        vertical-align: super;
+      }
+
+      /* middle 中央 */
+      #p4 {
+        vertical-align: middle;
+      }
+
+      #p55 {
+        vertical-align: 10px;
+      }
+
+      #p6 {
+        vertical-align: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <p>对比文字 <span id="p1">基线对齐</span></p>
+    <p>对比文字 <span id="p2">下标</span></p>
+    <p>对比文字 <span id="p3">上标</span></p>
+    <p>对比文字 <span id="p4">中间</span></p>
+    <p>对比文字 <span id="p5">偏移值</span></p>
+    <p>对比文字 <span id="p6">百分比</span></p>
+  </body>
+</html>
