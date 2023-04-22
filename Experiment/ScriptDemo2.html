@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>计算1！+2！+3！+4！+5！的和</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      document.write("计算1！+2！+3！+4！+5！的和<br/>");
+      for (i = 1, sum = 0; i <= 5; i++) {
+        for (j = 1, cj = 1; j <= i; j++) {
+          cj = cj * j;
+        }
+        document.write(i + "!=" + cj + "<br/>");
+        sum = sum + cj;
+      }
+      document.write("1！+2！+3！+4！+5！=" + sum);
+    </script>
+  </body>
+</html>

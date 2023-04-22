@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>求梯形面积</title>
+    <script type="text/javascript">
+      function area(a, b, c) {
+        s = ((parseInt(a.value) + parseInt(b.value)) / 2) * c.value;
+        alert("梯形的面积为" + s);
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <h1 alian="center">输入值求梯形面积</h1>
+      上底:<input type="text" name="a" /><br />
+      下底:<input type="text" name="b" /><br />
+      高度:<input type="text" name="c" /><br />
+      <br />
+      &emsp;&emsp;&emsp;&emsp;&emsp;<input
+        type="button"
+        onclick="area(a,b,c)"
+        value="求面积"
+      /><br />
+    </form>
+  </body>
+</html>
