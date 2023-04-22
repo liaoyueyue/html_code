@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>主界面</title>
+    <style>
+      .box {
+        background-image: url(https://uploadstatic.mihoyo.com/puzzle/upload/puzzle/2023/04/04/ad212e1954fd8a3ccbb09bf90bd4096d_512473411742176770.png?);
+        background-attachment: scroll;
+        background-repeat: repeat-y;
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 300vh;
+      }
+
+      /* 设置导航栏的样式 */
+      .navbar {
+        background-color: rgba(17, 17, 17, 0.75);
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      /* 导航栏样式中的链接样式 */
+      .navbar a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 28px;
+        text-decoration: none;
+      }
+
+      /* 导航栏样式中鼠标悬停状态时的链接 */
+      .navbar a:hover {
+        background-color: green;
+      }
+
+      /* 活动链接的样式 */
+      .active {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="navbar">
+        <a class="active" href="#" style="height: 66px; line-height: 66px"
+          >首页</a
+        >
+        <a href="#" style="height: 66px; line-height: 66px">资讯</a>
+        <a href="#" style="height: 66px; line-height: 66px">介绍</a>
+        <a href="#" style="height: 66px; line-height: 66px">帮助</a>
+        <div
+          style="
+            position: absolute;
+            z-index: 1;
+            transition: all 0.2s ease-in-out 0s;
+            background-color: rgb(105, 224, 255);
+            height: 5px;
+            left: 200px;
+            width: 40px;
+            top: 0px;
+          "
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>

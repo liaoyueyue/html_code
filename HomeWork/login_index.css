@@ -10,12 +10,12 @@
 }
 
 .content {
-  width: 85vw;
-  height: 90vh;
+  width: 90vw;
+  height: 85vh;
   background-color: rgb(156, 148, 208);
   position: absolute;
-  top: 5vh;
-  left: 7.5vw;
+  top: 7.5vh;
+  left: 5vw;
   border-radius: 40px;
   box-shadow: 10px 10px 10px -3px rgba(0, 0, 0, 0.25),
     inset 3px 3px 5px rgba(208, 203, 230, 0.75),
@@ -23,7 +23,8 @@
     inset -1px -1px 5px rgba(0, 0, 0, 0.3);
 }
 
-.login-img {
+.login-img,
+.register-img {
   width: 40vw;
   height: 55vh;
   margin: 15vh 7.5vw;
@@ -31,9 +32,16 @@
   border-radius: 40px;
 }
 
+.register-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* opacity 不透明的 */
+  opacity: 0;
+}
+
 .login-wrapper {
   width: 30vw;
-  height: 70vh;
   border-radius: 40px;
   background-color: rgb(208, 203, 230);
   box-sizing: border-box;
@@ -58,4 +66,77 @@
 
 .tips-span {
   float: right;
+  font-size: 16px;
+  color: rgb(79, 133, 226);
+  line-height: 6vh;
+  /* cursor 光标
+  pointer 提示 */
+  cursor: pointer;
+}
+
+.tips-span:hover {
+  font-size: 18px;
+}
+
+.login-form {
+  width: 100%;
+  margin-top: 3vh;
+  display: block;
+}
+
+.register-form {
+  width: 100%;
+  margin-top: 3vh;
+  display: none;
+}
+
+.user-form,
+.password-form {
+  padding: 1vh 0;
+}
+
+.user-form input,
+.password-form input {
+  padding: 0 5px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 100%;
+  height: 6vh;
+  border-radius: 5px;
+  border: 1px solid rgba(123, 122, 123, 0.5);
+}
+
+.forgot-password {
+  float: right;
+  cursor: pointer;
+}
+
+.text-tips,
+.forgot-password {
+  font-size: 16px;
+  color: rgb(123, 122, 123);
+  line-height: 25px;
+}
+
+.forgot-password:hover {
+  color: rgb(79, 133, 266);
+}
+
+.btn {
+  width: 100%;
+  height: 6vh;
+  margin-top: 3vh;
+  background-color: rgb(59, 58, 59);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.register-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
