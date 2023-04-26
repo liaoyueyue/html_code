@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>超链接和鼠标样式</title>
+    <style>
+      a {
+        font-family: "幼圆";
+        text-align: center;
+        font-size: 2em;
+        margin: 20px;
+        /* decoration 装饰 */
+        text-decoration: none;
+      }
+      a:link,
+      a:visited {
+        background-color: silver;
+        border-top: 1px solid gray;
+        border-left: 1px solid gray;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+      }
+      a:hover {
+        color: white;
+        background-color: pink;
+        border-top: 3px solid black;
+        border-left: 3px solid black;
+        border-bottom: 1px solid gray;
+        border-right: 1px solid gray;
+        cursor: n-resize;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">首页</a>
+    <a href="#">公司</a>
+    <a href="#">产品</a>
+    <a href="#">联系</a>
+  </body>
+</html>

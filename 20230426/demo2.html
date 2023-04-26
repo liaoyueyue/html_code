@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表格样式</title>
+    <style>
+      body {
+        margin: 10px 30%;
+      }
+      table {
+        border: 2px solid black;
+        width: 300px;
+        text-align: center;
+        /* 单元格间边框样式，separate表示单元格间的边框独立，collapse表示单元格的边框合并为单一的边框 */
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+      }
+      .t {
+        background-color: orange;
+        font-weight: bolder;
+      }
+      tr:nth-child(even) {
+        background: #eef;
+      }
+      #b1 {
+        font-family: "幼圆";
+        font-size: 20px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption id="b1">
+        年度排行版
+      </caption>
+      <tr class="t">
+        <th>姓名</th>
+        <th>排名</th>
+        <th>总分</th>
+      </tr>
+      <tr>
+        <td>张三</td>
+        <td>1</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>李四</td>
+        <td>2</td>
+        <td>400</td>
+      </tr>
+      <tr>
+        <td>王五</td>
+        <td>3</td>
+        <td>350</td>
+      </tr>
+      <tr>
+        <td>赵六</td>
+        <td>4</td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td>孙七</td>
+        <td>5</td>
+        <td>200</td>
+      </tr>
+      <tr class="t">
+        <td colspan="2">总计</td>
+        <td>1750</td>
+      </tr>
+    </table>
+  </body>
+</html>
