@@ -23,6 +23,10 @@
     inset -1px -1px 5px rgba(0, 0, 0, 0.3);
 }
 
+.add-class-content {
+  background-color: rgb(220, 202, 228) !important;
+}
+
 .login-img,
 .register-img {
   width: 40vw;
@@ -38,6 +42,64 @@
   left: 0;
   /* opacity 不透明的 */
   opacity: 0;
+}
+
+.add-class-login-img {
+  animation: disappear 0.1s forwards;
+  -webkit-animation: disappear 0.1s forwards;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+
+.add-class-register-img {
+  animation: appear 0.1s forwards;
+  -webkit-animation: appear 0.1s forwards;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  animation-delay: 0.2s;
+}
+
+.add-class-login-img-show {
+  animation: appear 1s forwards;
+  -webkit-animation: appear 1s forwards;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .login-wrapper {
@@ -132,11 +194,4 @@
   color: #fff;
   font-size: 20px;
   cursor: pointer;
-}
-
-.register-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
 }

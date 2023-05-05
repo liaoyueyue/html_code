@@ -19,6 +19,18 @@
           //修改提示
           document.getElementById("h1-text").innerHTML = "注册";
           document.getElementById("tips-span").innerHTML = "登录";
+          //更换注册图片
+          document
+            .querySelector(".login-img")
+            .classList.add("add-class-login-img");
+          document
+            .querySelector(".register-img")
+            .classList.add("add-class-register-img");
+          document
+            .querySelector(".login-img")
+            .classList.remove("add-class-login-img-show");
+          //更换背景颜色
+          document.querySelector(".content").classList.add("add-class-content");
         } else {
           //这里flag为假，默认注册块显示，登录块隐藏
           flag = 1;
@@ -28,6 +40,20 @@
           //修改提示
           document.getElementById("h1-text").innerHTML = "登录";
           document.getElementById("tips-span").innerHTML = "注册";
+          //更换登录图片
+          document
+            .querySelector(".login-img")
+            .classList.remove("add-class-login-img");
+          document
+            .querySelector(".register-img")
+            .classList.remove("add-class-register-img");
+          document
+            .querySelector(".login-img")
+            .classList.add("add-class-login-img-show");
+          //更换背景颜色
+          document
+            .querySelector(".content")
+            .classList.remove("add-class-content");
         }
       }
     </script>
