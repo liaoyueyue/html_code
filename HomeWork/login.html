@@ -7,6 +7,49 @@
     <title>登录界面</title>
     <link rel="stylesheet" href="css/login.css" />
     <script>
+      function submit() {
+        let user = document.getElementById("user").value;
+        let psw = document.getElementById("psw").value;
+        let loginData = JSON.parse(localStorage.getItem("loginData"));
+        if (loginData != null && loginData != undefined) {
+          let val = loginData.some((item) => {
+            return item.name == user && item.psw == psw;
+          });
+          if (val) {
+            window.location.href = "success.html?user=" + user;
+          } else {
+            alert("账户或密码错误，请重新输入");
+          }
+        } else {
+          alert("账号不存在，请重新输入");
+        }
+      }
+
+      function reg() {
+        let user = document.getElementById("userNew").value;
+        let psw = document.getElementById("pswOne").value;
+        let psws = document.getElementById("pswTwo").value;
+        if (psw != psws) {
+          alert("密码输入不一致，请重新输入");
+        } else {
+          //字符串转化为对象
+          let loginData = JSON.parse(localStorage.getItem("loginData"));
+          if (loginData === null) {
+            loginData = [];
+          }
+          let val = loginData.some((item) => {
+            return item.name == user;
+          });
+          if (val) {
+            alert("账户已经存在，请重新输入");
+          } else {
+            loginData.push({ name: user, psw: psw });
+            localStorage.setItem("loginData", JSON.stringify(loginData));
+            window.location.href = "login.html";
+          }
+        }
+      }
+
       //let 一种块级作用域变量，避免一些var关键字的问题。
       let flag = 1;
       function register() {
@@ -72,31 +115,31 @@
             >
           </div>
 
-          <form action="index.html" method="get">
-            <div class="login-form" id="login">
-              <div class="user-form">
-                <div class="text-tips">
-                  <span>账号</span>
-                </div>
-                <input type="text" id="user" required />
-              </div>
-              <div class="password-form">
-                <div class="text-tips">
-                  <span>密码</span>
-                  <span class="forgot-password">忘记密码?</span>
-                </div>
-                <input type="password" id="psw" required />
-              </div>
-              <button class="btn" onclick="">登录</button>
-            </div>
-          </form>
-
-          <div class="register-form" id="register">
+          <!-- 登录表单 -->
+          <div class="login-form" id="login">
             <div class="user-form">
               <div class="text-tips">
                 <span>账号</span>
               </div>
               <input type="text" id="user" required />
+            </div>
+            <div class="password-form">
+              <div class="text-tips">
+                <span>密码</span>
+                <span class="forgot-password">忘记密码?</span>
+              </div>
+              <input type="password" id="psw" required />
+            </div>
+            <button class="btn" onclick="submit()">登录</button>
+          </div>
+
+          <!-- 注册表单 -->
+          <div class="register-form" id="register">
+            <div class="user-form">
+              <div class="text-tips">
+                <span>账号</span>
+              </div>
+              <input type="text" id="userNew" required />
             </div>
             <div class="password-form">
               <div class="text-tips">
@@ -110,7 +153,7 @@
               </div>
               <input type="password" id="pswTwo" required />
             </div>
-            <button class="btn" onclick="">注册</button>
+            <button class="btn" onclick="reg()">注册</button>
           </div>
         </div>
       </div>
