@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* transition-timing-function 属性用于指定 CSS 过渡效果的速度曲线，即过渡效果从开始到结束的动画速度变化情况。
+      可以使用预定义的速度曲线，如 linear、ease、ease-in、ease-out、ease-in-out，也可以使用自定义的贝塞尔曲线。 */
+      /* 
+        linear：匀速运动，速度不变。
+        ease：默认值，缓慢开始，加速然后减速结束。
+        ease-in：缓慢开始，然后加速。
+        ease-out：加速结束，然后减速。
+        ease-in-out：缓慢开始，加速然后减速结束。 
+      */
+      div {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        transition-property: width;/* 过渡样式 */
+        transition-duration: 2s;/* 过渡时间 */
+        transition-timing-function: linear; /* 过渡效果速度 */
+      }
+      div:hover {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

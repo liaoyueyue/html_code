@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* transition-property 过度样式  属性用于指定应用过渡效果的 CSS 属性的名称，多个属性名称可以用空格分隔。 */
+      p:hover {
+        transition-property: color background-color;
+        color: red;
+        background-color: blue;
+      }
+      img:hover {
+        transition-property: transform;
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <p>这是一个段落</p>
+    <img src="images/1.png" alt="image" width="100" />
+  </body>
+</html>
