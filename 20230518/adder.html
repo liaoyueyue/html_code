@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>加法器</title>
+    <style type="text/css">
+      .container {
+        margin: 20px auto;
+        width: 300px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+      }
+
+      input[type="number"] {
+        width: 100%;
+        margin-top: 10px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+      }
+
+      button {
+        margin-top: 10px;
+        padding: 5px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0069d9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>加法器</h1>
+      <label for="num1">第一个数字：</label>
+      <input
+        type="number"
+        id="num1"
+        name="num1"
+        placeholder="请输入第一个数字"
+      />
+      <label for="num2">第二个数字：</label>
+      <input
+        type="number"
+        id="num2"
+        name="num2"
+        placeholder="请输入第二个数字"
+      />
+      <button onclick="add()">计算</button>
+      <p id="result"></p>
+    </div>
+
+    <script type="text/javascript">
+      function add() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+        var result = num1 + num2;
+        document.getElementById("result").innerHTML = "计算结果是：" + result;
+      }
+    </script>
+  </body>
+</html>
