@@ -1,0 +1,42 @@
+.poster-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  position: absolute;
+  top: 102vh;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.waterfall-flow-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.waterfall-flow-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.waterfall-flow-column img {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .waterfall-flow-column {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+}

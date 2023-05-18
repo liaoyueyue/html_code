@@ -1,0 +1,52 @@
+<!-- 导航栏 -->
+<nav class="navbar">
+  <!-- 图片 -->
+  <!-- <div class="inline-div">
+          <img src="" alt="图片" />
+        </div> -->
+  <!-- 各个功能块 -->
+  <div class="inline-div">
+    <a href="index.html" class="nav-item">首页</a>
+    <a href="role.html" class="nav-item">角色</a>
+    <a href="plot.html" class="nav-item">剧情</a>
+    <a href="about.html" class="nav-item">关于</a>
+  </div>
+</nav>
+
+<style>
+  /* 设置导航栏的样式 */
+  .navbar {
+    /* 背景框 */
+    background-color: rgba(17, 17, 17, 0.75);
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+    /* 让导航栏固定 */
+    position: fixed;
+    /* 定位到浏览器左上角 */
+    top: 0;
+    left: 0;
+    /* 高度,宽度 */
+    height: 50px;
+    width: 100%;
+    /* 让导航栏处于最顶层 */
+    z-index: 1000;
+  }
+
+  .inline-div {
+    /* 行内块 */
+    display: inline-block;
+    /* 使垂直居中 */
+    line-height: 50px;
+  }
+
+  .nav-item {
+    /* 超链接去除下划线 */
+    text-decoration: none;
+    padding: 10px 25px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .nav-item:hover {
+    background-color: red;
+  }
+</style>
