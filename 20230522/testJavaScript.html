@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <body>
+    <script>
+      let str = "hello";
+      console.log(str);
+      let Hello = function () {
+        console.log("HelloWorld");
+      };
+      Hello();
+      let ikun = {
+        name: "蔡徐坤",
+        aeg: 20,
+        gender: "male",
+        sing: function () {
+          console.log("鸡你太美");
+        },
+        dance: function () {
+          console.log("铁山靠");
+        },
+      };
+      console.log(ikun.name);
+      ikun.sing();
+      ikun.dance();
+      function add() {
+        let ret = 0;
+        for (let i = 0; i < arguments.length; i++) {
+          // arguments这个数组包含add方法所有实参的值
+          ret += arguments[i];
+        }
+        return ret;
+      }
+      console.log(add(66, 66));
+    </script>
+  </body>
+</html>
