@@ -1,6 +1,7 @@
 .poster-wrapper {
   width: 100%;
   height: 100vh;
+  /* 绝对位置，让海报置顶靠左 */
   position: absolute;
   top: 0;
   left: 0;
@@ -14,22 +15,29 @@
 .poster {
   width: 100%;
   height: 100%;
+  /* 修剪海报适应窗口 */
   object-fit: cover;
 }
 
 .waterfall-flow-wrapper {
+  /* 弹性布局 */
   display: flex;
+  /* 指定当一行空间不足时，元素会换行显示 */
   flex-wrap: wrap;
+  /* 水平分布、间距均匀 */
   justify-content: space-between;
 }
 
 .waterfall-flow-column {
+  /* 每一列的宽度设置为相等的弹性比例 */
   flex: 1;
   margin-right: 20px;
 }
 
 .waterfall-flow-column img {
+  /* 块级元素 */
   display: block;
+  /* 确保图片填充整个列 */
   width: 100%;
   margin-bottom: 20px;
 }
