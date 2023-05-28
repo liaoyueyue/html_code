@@ -1,0 +1,43 @@
+.content {
+  width: 400px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  color: #666;
+}
+
+.row-div {
+  height: 40px;
+  display: flex;
+  /* 水平居中 */
+  justify-content: center;
+  /* 垂直居中 */
+  align-items: center;
+}
+
+.row-div span {
+  width: 100px;
+}
+
+.row-div input {
+  width: 200px;
+  height: 30px;
+}
+
+.row-div button {
+  width: 308px;
+  height: 40px;
+  color: white;
+  background-color: orange;
+  border: none;
+}
+
+.row-div button:active {
+  background-color: #666;
+}

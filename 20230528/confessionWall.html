@@ -5,10 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>表白墙模拟</title>
+    <link rel="stylesheet" href="confessionWall.css">
 </head>
 <body>
     <div class="content">
-        
+        <h1>表白墙</h1>
+        <p>输入后点击提交,可将消息发送至表单</p>
+        <div class="row-div">
+            <span>谁：</span>
+            <input type="text" name="from">
+        </div>
+        <div class="row-div">
+            <span>对谁：</span>
+            <input type="text" name="to">
+        </div>
+        <div class="row-div">
+            <span>说：</span>
+            <input type="text" name="message">
+        </div>
+        <div class="row-div">
+            <button>提交</button>
+        </div>
     </div>
+    <script>
+        let content = document.querySelector('.content');
+        let button = document.querySelector('button');
+        button.onclick = function() {
+            // 1. 获取输入框内容
+            let inputs = document.querySelectorAll('input');
+            let from  = inputs[0].value;
+            let to  = inputs[1].value;
+            let message  = inputs[2].value;
+            if(from=='' || to=='' || message == '') {
+                alert("当前输入框为空");
+                return;
+            }
+            console.log(from, to, message);
+            // 2. 构造新div，保存用户输入内容
+            let rowDiv = document.createElement('div');
+            rowDiv.className = 'row-div';
+            rowDiv.innerHTML = from  + " 对 " + to + " 说：" + message;
+            content.appendChild(rowDiv);
+            // 3. 提交完成后清空输入框内容
+            for(let i = 0; i < inputs.length; i++) {
+                inputs[i].value = '';
+            }
+        }
+    </script>
 </body>
 </html>

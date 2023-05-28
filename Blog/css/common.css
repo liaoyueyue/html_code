@@ -1,0 +1,48 @@
+/* 清除浏览器样式 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 让html的高度和body一样高 */
+  height: 100%;
+}
+
+body {
+  /* 让body的高度和html一样高 */
+  height: 100%;
+  background-image: url(../images/cat.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  height: 50px;
+  background-color: rgba(50, 50, 50, 0.4);
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav img {
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.nav .spacer {
+  width: 70%;
+  height: 40px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
