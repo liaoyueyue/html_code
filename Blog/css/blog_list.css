@@ -1,0 +1,38 @@
+.blog {
+
+}
+
+.blog .title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700px;
+  padding: 10px 0;
+}
+
+.blog .date {
+  text-align: center;
+  color: rgb(0, 128, 0);
+  padding: 10px 0;
+}
+
+.blog .desc {
+  text-indent: 2em;
+}
+
+.blog a {
+  display: block;
+  width: 120px;
+  height: 40px;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  transition: all 0.7s;
+}
+
+.blog a:active {
+  background-color: black;
+  color: white;
+}

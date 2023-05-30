@@ -46,3 +46,61 @@ body {
   text-decoration: none;
   padding: 0 10px;
 }
+
+.container {
+  width: 1000px;
+  height: calc(100% - 60px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.container .container-left {
+  width: 200px;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.card img {
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+}
+
+.card h3 {
+  text-align: center;
+  padding: 10px;
+}
+
+.card a {
+  display: block;
+  text-align: center;
+  color: #999;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.card .counter {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.container .container-right {
+  width: 796px;
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  overflow: auto;
+}
+
+
+

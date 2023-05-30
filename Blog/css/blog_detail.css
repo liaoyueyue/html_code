@@ -1,0 +1,15 @@
+.blog-detail .title {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.blog-detail .date {
+  color: rgb(0, 128, 0);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.blog-detail .desc {
+  text-indent: 2em;
+}
